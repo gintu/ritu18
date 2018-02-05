@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RITU</title>
+    <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
+    <script src="vendors/jquery.easings.min.js"></script>
+
+
+    <!-- This following line is only necessary in the case of using the option `scrollOverflow:true` -->
+    <script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
+
+    <script type="text/javascript" src="jquery.fullPage.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#fullpage').fullpage({
+            css3: true,
+            scrollingSpeed: 700,
+            autoScrolling: true,
+            fitToSection: true,
+            fitToSectionDelay: 1000
+        });
+    });
+</script>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet"> </head>
+<body>
+
+
+<div id="fullpage">
+    <div class="section" style="background-color: #282d4f">
+
+
+<div class="center">
+    <img src="Asset%2012.svg">
+</div>
+        <div class="cf">
+            <h1 style="font-size: 50px">RITU 2018</h1>
+        </div>
+        <div class="cf">
+            <h3 style="font-size: 30px">Techno-cultural fest of RIT Kottayam</h3>
+        </div>
+
+
+    </div>
+    <div class="section" style="background-color: #23103a">
+        <div class="cf" style="font-size: 50px">
+            Main Events
+        </div>
+
+
+
+    </div>
+    <div class="section" style="background-color: #a0204c">Some section</div>
+    <div class="section" style="background-color: #ff6c00">Some section</div>
+</div>
+
+</body>
+</html>

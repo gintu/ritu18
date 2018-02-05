@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>RITU</title>
     <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
@@ -15,6 +17,7 @@
     <script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
 
     <script type="text/javascript" src="jquery.fullPage.js"></script>
+
 <script type="text/javascript">
     $(document).ready(function() {
         $('#fullpage').fullpage({
@@ -26,8 +29,10 @@
         });
     });
 </script>
-    <link rel="stylesheet" href="css/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet"> </head>
+
+
+    <script src="node_modules/animejs/anime.min.js"></script>
+
 <body>
 
 
@@ -39,7 +44,7 @@
     <img src="Asset%2012.svg">
 </div>
         <div class="cf">
-            <h1 style="font-size: 50px">RITU 2018</h1>
+            <h1 style="font-size: 50px"><strong>RITU 2018</strong></h1>
         </div>
         <div class="cf">
             <h3 style="font-size: 30px">Techno-cultural fest of RIT Kottayam</h3>
@@ -49,15 +54,36 @@
     </div>
     <div class="section" style="background-color: #23103a">
         <div class="cf" style="font-size: 50px">
-            Main Events
+         Main events
         </div>
 
 
 
     </div>
-    <div class="section" style="background-color: #a0204c">Some section</div>
-    <div class="section" style="background-color: #ff6c00">Some section</div>
-</div>
+    <div class="section" style="background-color: #a0204c">
+        <div class="cf" >Department events</div>
 
+
+    </div>
+    <div class="section" style="background-color: #ff6c00">
+
+        <div class="cf" >Contact</div>
+
+
+    </div>
+</div>
+<script type="text/javascript">
+
+    var lineDrawing = anime({
+        targets: '#lineDrawing .lines path',
+        strokeDashoffset: [anime.setDashoffset, 0],
+        easing: 'easeInOutSine',
+        duration: 1500,
+        delay: function(el, i) { return i * 250 },
+        direction: 'alternate',
+        loop: true
+    });
+
+</script>
 </body>
 </html>
